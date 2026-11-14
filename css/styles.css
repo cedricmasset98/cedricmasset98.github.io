@@ -7,14 +7,16 @@ body.active {
 	overflow: hidden
 }
 
-.no-js #experience-timeline>div {
+.no-js #experience-timeline>div,
+.no-js #education-timeline>div {
 	background: #fff;
 	padding: 10px;
 	margin-bottom: 10px;
 	border: 1px solid #dcd9d9
 }
 
-.no-js #experience-timeline>div h3 {
+.no-js #experience-timeline>div h3,
+.no-js #education-timeline>div h3 {
 	font-size: 1.5em;
 	font-weight: 300;
 	color: #374054;
@@ -22,21 +24,25 @@ body.active {
 	margin: 0
 }
 
-.no-js #experience-timeline>div h4 {
+.no-js #experience-timeline>div h4,
+.no-js #education-timeline>div h4 {
 	font-size: 1.2em;
 	font-weight: 300;
 	color: #7e8890;
 	margin: 0 0 15px 0
 }
 
-.no-js #experience-timeline>div p {
+.no-js #experience-timeline>div p,
+.no-js #education-timeline>div p {
 	color: #74808a;
 	font-size: 0.9em;
 	margin: 0
 }
 
 .no-js #experience-timeline:before,
-.no-js #experience-timeline:after {
+.no-js #experience-timeline:after,
+.no-js #education-timeline:before,
+.no-js #education-timeline:after {
 	content: none
 }
 
@@ -392,13 +398,15 @@ footer {
 	color: #374054
 }
 
-#experience-timeline {
+#experience-timeline,
+#education-timeline {
 	margin: 30px auto 0 auto;
 	position: relative;
 	max-width: 1000px
 }
 
-#experience-timeline:before {
+#experience-timeline:before,
+#education-timeline:before {
 	position: absolute;
 	content: '';
 	top: 0;
@@ -411,7 +419,8 @@ footer {
 	z-index: 0
 }
 
-#experience-timeline:after {
+#experience-timeline:after,
+#education-timeline:after {
 	position: absolute;
 	content: '';
 	width: 3px;
@@ -488,14 +497,45 @@ footer {
 }
 
 #education {
-	padding: 65px 15px 20px 15px;
+	padding: 65px 15px;
 	border-bottom: 1px solid #dcd9d9;
 	text-align: center
 }
 
 #education h2 {
+	color: #374054
+}
+
+.vtimeline-content h4 a {
+	color: #7e8890;
+	text-decoration: none
+}
+
+.vtimeline-content h4 a:hover {
 	color: #374054;
-	margin-bottom: 50px
+	text-decoration: underline
+}
+
+.vtimeline-content .edu-details {
+	margin: 12px 0 0 0;
+	padding: 12px 0 0 0;
+	border-top: 1px solid #eee;
+	list-style: none;
+	color: #74808a;
+	font-size: 0.9em
+}
+
+.vtimeline-content .edu-details li {
+	margin-bottom: 4px
+}
+
+.vtimeline-content .edu-details b {
+	color: #374054;
+	font-weight: 500
+}
+
+.vtimeline-content .edu-details a {
+	color: #374054
 }
 
 .education-block {
@@ -806,7 +846,9 @@ footer {
 @media only screen and (max-width: 750px) {
 
 	#experience-timeline:before,
-	#experience-timeline:after {
+	#experience-timeline:after,
+	#education-timeline:before,
+	#education-timeline:after {
 		left: 23px
 	}
 

@@ -54,9 +54,10 @@
     });
 
     // Create timeline
-    $('#experience-timeline').each(function () {
+    $('#experience-timeline, #education-timeline').each(function () {
 
         $this = $(this); // Store reference to this
+        $ico = $this.is('#education-timeline') ? 'fa-graduation-cap' : 'fa-map-marker';
         $userContent = $this.children('div'); // user content
 
         // Create each timeline block
@@ -66,7 +67,7 @@
 
         // Add icons to each block
         $this.find('.vtimeline-point').each(function () {
-            $(this).prepend('<div class="vtimeline-icon"><i class="fa fa-map-marker"></i></div>');
+            $(this).prepend('<div class="vtimeline-icon"><i class="fa ' + $ico + '"></i></div>');
         });
 
         // Add dates to the timeline if exists
