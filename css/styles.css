@@ -1,3 +1,9 @@
+:root {
+	--slate: #374054;
+	--gold: #BA7517;
+	--gold-light: #F0B85A
+}
+
 body {
 	font-family: 'IBM Plex Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
 	font-size: 16px
@@ -19,7 +25,7 @@ body.active {
 .no-js #education-timeline>div h3 {
 	font-size: 1.5em;
 	font-weight: 300;
-	color: #374054;
+	color: var(--slate);
 	display: inline-block;
 	margin: 0
 }
@@ -381,7 +387,7 @@ footer {
 }
 
 #about h2 {
-	color: #374054
+	color: var(--slate)
 }
 
 #about p {
@@ -396,7 +402,7 @@ footer {
 }
 
 #experience h2 {
-	color: #374054
+	color: var(--slate)
 }
 
 #experience-timeline,
@@ -416,7 +422,7 @@ footer {
 	right: auto;
 	height: 100%;
 	width: 3px;
-	background: #374054;
+	background: var(--slate);
 	z-index: 0
 }
 
@@ -426,8 +432,8 @@ footer {
 	content: '';
 	width: 3px;
 	height: 40px;
-	background: #374054;
-	background: linear-gradient(to bottom, #374054, rgba(55, 64, 84, 0));
+	background: var(--slate);
+	background: linear-gradient(to bottom, var(--slate), rgba(55, 64, 84, 0));
 	top: 100%;
 	left: 303px
 }
@@ -444,7 +450,7 @@ footer {
 .vtimeline-content h3 {
 	font-size: 1.5em;
 	font-weight: 300;
-	color: #374054;
+	color: var(--slate);
 	display: inline-block;
 	margin: 0
 }
@@ -471,10 +477,10 @@ footer {
 
 .vtimeline-icon {
 	position: relative;
-	color: #F0B85A;
+	color: var(--gold-light);
 	width: 50px;
 	height: 50px;
-	background: #374054;
+	background: var(--slate);
 	border-radius: 50%;
 	float: left;
 	z-index: 99;
@@ -494,7 +500,7 @@ footer {
 	left: 0;
 	top: 10px;
 	font-weight: 300;
-	color: #374054
+	color: var(--slate)
 }
 
 #education {
@@ -504,7 +510,7 @@ footer {
 }
 
 #education h2 {
-	color: #374054
+	color: var(--slate)
 }
 
 .vtimeline-content h4 a {
@@ -513,7 +519,7 @@ footer {
 }
 
 .vtimeline-content h4 a:hover {
-	color: #374054;
+	color: var(--slate);
 	text-decoration: underline
 }
 
@@ -531,12 +537,12 @@ footer {
 }
 
 .vtimeline-content .edu-details b {
-	color: #374054;
+	color: var(--slate);
 	font-weight: 500
 }
 
 .vtimeline-content .edu-details a {
-	color: #374054
+	color: var(--slate)
 }
 
 .education-block {
@@ -551,7 +557,7 @@ footer {
 	font-weight: 500;
 	float: left;
 	margin: 0;
-	color: #374054
+	color: var(--slate)
 }
 
 .education-block span {
@@ -594,7 +600,7 @@ footer {
 }
 
 #projects h2 {
-	color: #374054;
+	color: var(--slate);
 	margin-bottom: 50px
 }
 
@@ -622,7 +628,7 @@ footer {
 .project-info h3 {
 	font-size: 1.5em;
 	font-weight: 300;
-	color: #374054;
+	color: var(--slate);
 	margin: 0 0 15px 0
 }
 
@@ -652,7 +658,7 @@ footer {
 
 
 #skills h2 {
-	color: #374054;
+	color: var(--slate);
 	margin-bottom: 50px
 }
 
@@ -667,7 +673,7 @@ footer {
 	display: inline-block;
 	margin: 7px;
 	padding: 5px 10px;
-	color: #374054;
+	color: var(--slate);
 	background: #e4e4ea;
 	list-style: none;
 	cursor: default;
@@ -693,7 +699,7 @@ footer {
 	display: inline-block;
 	margin: 7px;
 	padding: 5px 10px;
-	color: #374054;
+	color: var(--slate);
 	background: #e4e4ea;
 	list-style: none;
 	cursor: default;
@@ -702,7 +708,7 @@ footer {
 
 #skills li .fa,
 #loisirs li .fa {
-	color: #BA7517;
+	color: var(--gold);
 	margin-right: 6px
 }
 
@@ -809,7 +815,7 @@ footer {
 }
 
 .optional-section h2 {
-	color: #374054
+	color: var(--slate)
 }
 
 .optional-section-block {
@@ -824,7 +830,7 @@ footer {
 .optional-section-block h3 {
 	font-weight: 500;
 	margin: 0 0 15px 0;
-	color: #374054
+	color: var(--slate)
 }
 
 .optional-section-block h4 {
@@ -994,10 +1000,10 @@ footer {
 	margin: 0 auto;
 	text-align: left;
 	background: #f6f6f8;
-	border-left: 3px solid #BA7517;
+	border-left: 3px solid var(--gold);
 	padding: 24px 28px;
 	font-family: 'IBM Plex Mono', 'Courier New', monospace;
-	color: #374054
+	color: var(--slate)
 }
 
 #about .cipher-meta {
