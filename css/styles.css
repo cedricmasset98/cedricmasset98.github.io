@@ -415,7 +415,7 @@ footer {
 	right: auto;
 	height: 100%;
 	width: 3px;
-	background: #000000;
+	background: #374054;
 	z-index: 0
 }
 
@@ -425,8 +425,8 @@ footer {
 	content: '';
 	width: 3px;
 	height: 40px;
-	background: #000000;
-	background: linear-gradient(to bottom, #000000, rgba(52, 152, 219, 0));
+	background: #374054;
+	background: linear-gradient(to bottom, #374054, rgba(55, 64, 84, 0));
 	top: 100%;
 	left: 303px
 }
@@ -470,10 +470,10 @@ footer {
 
 .vtimeline-icon {
 	position: relative;
-	color: #fff;
+	color: #F0B85A;
 	width: 50px;
 	height: 50px;
-	background: #000000;
+	background: #374054;
 	border-radius: 50%;
 	float: left;
 	z-index: 99;
@@ -706,7 +706,8 @@ footer {
 }
 
 #loisirs li.vt-item {
-	padding: 3px 8px
+	padding: 5px 10px;
+	vertical-align: middle
 }
 
 #loisirs li.vt-item img {
@@ -986,4 +987,12 @@ footer {
 		font-size: 0.9em;
 		padding: 5px 10px
 	}
+}
+#about .cipher {
+	display: block;
+	font-family: 'IBM Plex Mono', 'Courier New', monospace;
+	font-size: 1.05em;
+	line-height: 1.8;
+	letter-spacing: 0.04em;
+	color: #374054;
 }
