@@ -659,6 +659,25 @@ footer {
 	font-size: 1.2em
 }
 
+#skills li .fa,
+#loisirs li .fa {
+	color: #BA7517;
+	margin-right: 6px
+}
+
+#loisirs li.vt-item {
+	padding: 3px 8px
+}
+
+#loisirs li.vt-item img {
+	vertical-align: middle;
+	transition: transform .15s ease
+}
+
+#loisirs li.vt-item a:hover img {
+	transform: scale(1.12)
+}
+
 
 
 #contact {
