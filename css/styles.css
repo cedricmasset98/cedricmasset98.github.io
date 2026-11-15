@@ -1038,3 +1038,64 @@ footer {
 		padding: 18px 16px
 	}
 }
+
+/* Menu (desktop): translucent over the header, white below it, gold underline */
+@media only screen and (min-width: 769px) {
+	header #menu {
+		border: 1px solid transparent;
+		border-top: none;
+		transition: background-color .3s ease, box-shadow .3s ease, border-color .3s ease
+	}
+
+	header #menu a {
+		position: relative;
+		color: var(--slate);
+		transition: color .2s ease
+	}
+
+	header #menu a:hover,
+	header #menu a:focus {
+		background: none;
+		color: var(--slate)
+	}
+
+	header #menu a:after {
+		content: "";
+		position: absolute;
+		left: 10px;
+		right: 10px;
+		bottom: 4px;
+		height: 2px;
+		background: var(--gold-light);
+		transform: scaleX(0);
+		transition: transform .2s ease
+	}
+
+	header #menu a:hover:after,
+	header #menu a:focus-visible:after,
+	header #menu a.current:after {
+		transform: scaleX(1)
+	}
+
+	header #menu a.current {
+		font-weight: 500
+	}
+
+	header.on-lead #menu {
+		background: rgba(46, 53, 70, 0.55);
+		-webkit-backdrop-filter: blur(8px);
+		backdrop-filter: blur(8px);
+		border-color: rgba(255, 255, 255, 0.12);
+		box-shadow: none
+	}
+
+	header.on-lead #menu a {
+		color: rgba(255, 255, 255, 0.85)
+	}
+
+	header.on-lead #menu a:hover,
+	header.on-lead #menu a:focus,
+	header.on-lead #menu a.current {
+		color: #fff
+	}
+}
