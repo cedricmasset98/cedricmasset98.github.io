@@ -1099,3 +1099,73 @@ footer {
 		color: #fff
 	}
 }
+
+/* Menu (mobile): slate button and full-screen slate panel */
+@media only screen and (max-width: 768px) {
+	#mobile-menu-open {
+		color: #fff;
+		background: rgba(46, 53, 70, 0.8);
+		-webkit-backdrop-filter: blur(8px);
+		backdrop-filter: blur(8px);
+		border: 1px solid rgba(255, 255, 255, 0.15);
+		border-radius: 8px;
+		padding: 2px 9px;
+		box-shadow: none
+	}
+
+	header {
+		background: #1b202c
+	}
+
+	#mobile-menu-close {
+		background: #1b202c;
+		color: rgba(255, 255, 255, 0.8);
+		padding: 18px 20px 0 0
+	}
+
+	header #menu {
+		background: #1b202c;
+		padding: 40px 20px
+	}
+
+	header #menu li {
+		margin-bottom: 6px
+	}
+
+	header #menu a {
+		display: inline-block;
+		position: relative;
+		color: rgba(255, 255, 255, 0.85);
+		font-size: 1.5em;
+		font-weight: 300;
+		padding: 10px 16px
+	}
+
+	header #menu a:hover,
+	header #menu a:focus {
+		background: none;
+		color: #fff
+	}
+
+	header #menu a:after {
+		content: "";
+		position: absolute;
+		left: 16px;
+		right: 16px;
+		bottom: 6px;
+		height: 2px;
+		background: var(--gold-light);
+		transform: scaleX(0);
+		transition: transform .2s ease
+	}
+
+	header #menu a.current {
+		color: #fff;
+		font-weight: 500
+	}
+
+	header #menu a.current:after,
+	header #menu a:hover:after {
+		transform: scaleX(1)
+	}
+}
